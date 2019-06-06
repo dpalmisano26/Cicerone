@@ -31,6 +31,6 @@ class HomeController extends Controller
     }
     public function activity()
     {
-        return view('newActivity');
+        return view('activity.newActivity');
     }
 }

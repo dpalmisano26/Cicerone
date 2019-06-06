@@ -19,4 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/testhome', 'HomeController@test')->name('testhome');
-Route::get('/newactivity', 'HomeController@activity')->name('newactivity');
+Route::get('/newActivity', 'ActivityController@insertform')->name('newActivity');
+
+Route::get('insert','ActivityController@insertForm');
+Route::post('create','ActivityController@insert'); 
